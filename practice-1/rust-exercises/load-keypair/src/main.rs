@@ -16,4 +16,5 @@ fn main() {
         Keypair::from_seed(secret_key.as_slice()).expect("Failed to create keypair from seed");
 
     println!("public key: {}", keypair.pubkey());
+    println!("private key: {:?}", keypair.to_bytes());
 }
