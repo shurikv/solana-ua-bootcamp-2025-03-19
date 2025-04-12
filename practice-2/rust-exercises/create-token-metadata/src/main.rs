@@ -40,7 +40,7 @@ fn main() {
         name: "Super Duper Token".to_string(),
         symbol: "SDT".to_string(),
         uri: "https://example.com/metadata.json".to_string(),
-        seller_fee_basis_points: 500, // 5%
+        seller_fee_basis_points: 500,
         creators: None,
         collection: None,
         uses: None,
@@ -83,9 +83,9 @@ fn main() {
 
     let metadata = Metadata::from_bytes(&account_data[..]).expect("Failed to deserialize metadata");
 
-    println!("📛 Name: {}", metadata.name);
-    println!("🔖 Symbol: {}", metadata.symbol);
-    println!("🌐 URI: {}", metadata.uri);
-    println!("✍️ Update authority: {}", metadata.update_authority);
-    println!("👤 You're signing with: {}", keypair.pubkey());
+    println!("Name: {}", metadata.name);
+    println!("Symbol: {}", metadata.symbol);
+    println!("URI: {}", metadata.uri);
+    println!("✍Update authority: {}", metadata.update_authority);
+    println!("You're signing with: {}", keypair.pubkey());
 }
