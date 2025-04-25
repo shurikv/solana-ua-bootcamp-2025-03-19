@@ -5,3 +5,5 @@ Cargo.lock
 node_modules
 /practice-3/favorites/.anchor/
 /practice-3/favorites/yarn.lock
+/practice-3/escrow/.anchor/
+/practice-3/escrow/yarn.lock
