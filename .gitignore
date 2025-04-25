@@ -3,3 +3,5 @@ target/
 Cargo.lock
 .idea
 node_modules
+/practice-3/favorites/.anchor/
+/practice-3/favorites/yarn.lock
